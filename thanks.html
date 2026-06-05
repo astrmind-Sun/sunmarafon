@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>Спасибо за оплату — Марафон «Летнее Солнцестояние»</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#F0EAE0;
+  --taupe:#7A7268;
+  --dark:#1A1917;
+  --white:#FDFAF6;
+  --serif:'Cormorant Garamond',Georgia,serif;
+  --sans:'Manrope',sans-serif;
+}
+body{
+  background:var(--bg);
+  color:var(--dark);
+  font-family:var(--sans);
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:32px 24px;
+  max-width:480px;
+  margin:0 auto;
+}
+.card{
+  text-align:center;
+  width:100%;
+}
+.sun{
+  margin:0 auto 28px;
+  opacity:.22;
+  display:block;
+}
+h1{
+  font-family:var(--serif);
+  font-size:clamp(2rem,7vw,2.8rem);
+  font-weight:700;
+  line-height:1.15;
+  margin-bottom:16px;
+}
+.sub{
+  font-family:var(--serif);
+  font-size:1.1rem;
+  font-style:italic;
+  color:var(--taupe);
+  margin-bottom:32px;
+  line-height:1.55;
+}
+.info-box{
+  background:#E6DDD2;
+  border-radius:4px;
+  padding:24px 20px;
+  margin-bottom:28px;
+  font-size:.95rem;
+  line-height:1.65;
+  color:#2E2B28;
+  text-align:left;
+}
+.info-box strong{display:block;margin-bottom:6px;font-size:1rem}
+.btn{
+  display:inline-flex;
+  align-items:center;
+  gap:12px;
+  background:var(--taupe);
+  color:var(--white);
+  text-decoration:none;
+  padding:16px 36px;
+  font-family:var(--sans);
+  font-size:.85rem;
+  font-weight:700;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  border-radius:2px;
+  transition:background .2s;
+  margin-bottom:20px;
+}
+.btn:hover{background:#5e5850}
+.note{
+  font-size:.78rem;
+  color:var(--taupe);
+  line-height:1.6;
+}
+</style>
+</head>
+<body>
+<div class="card">
+
+  <!-- Sun illustration -->
+  <svg class="sun" width="140" height="140" viewBox="0 0 300 300">
+    <circle cx="150" cy="150" r="124" stroke="#7A7268" stroke-width=".9" fill="none" stroke-dasharray="2 5"/>
+    <path d="M136.5,91.5 Q150,42 163.5,91.5Z" fill="#7A7268"/>
+    <path d="M181.8,99.1 Q226.4,73.6 200.9,118.2Z" fill="#7A7268"/>
+    <path d="M208.5,136.5 Q258,150 208.5,163.5Z" fill="#7A7268"/>
+    <path d="M200.9,181.8 Q226.4,226.4 181.8,200.9Z" fill="#7A7268"/>
+    <path d="M163.5,208.5 Q150,258 136.5,208.5Z" fill="#7A7268"/>
+    <path d="M118.2,200.9 Q73.6,226.4 99.1,181.8Z" fill="#7A7268"/>
+    <path d="M91.5,163.5 Q42,150 91.5,136.5Z" fill="#7A7268"/>
+    <path d="M99.1,118.2 Q73.6,73.6 118.2,99.1Z" fill="#7A7268"/>
+    <circle cx="150" cy="150" r="53" fill="#F0EAE0" stroke="#7A7268" stroke-width="1.5"/>
+    <path d="M124,136 Q130,129 136,136 Q130,142 124,136Z" fill="#7A7268"/>
+    <path d="M164,136 Q158,129 152,136 Q158,142 164,136Z" fill="#7A7268"/>
+    <path d="M136,162 Q150,172 164,162" stroke="#7A7268" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+  </svg>
+
+  <h1>Оплата прошла<br>успешно! ☀️</h1>
+  <p class="sub">Добро пожаловать в марафон<br>«Летнее Солнцестояние»</p>
+
+  <div class="info-box">
+    <strong>Что дальше?</strong>
+    Нажмите кнопку ниже, чтобы присоединиться к закрытой группе в Telegram. Там каждое утро с 16 по 21 июня будут появляться задания.
+  </div>
+
+  <!-- Маша: замени TELEGRAM_INVITE_LINK на реальную ссылку из Telegram -->
+  <a href="TELEGRAM_INVITE_LINK" class="btn">← ВОЙТИ В ГРУППУ →</a>
+
+  <p class="note">
+    Если ссылка не работает или есть вопросы —<br>
+    напишите Марии: <strong>@astrmind</strong>
+  </p>
+
+</div>
+</body>
+</html>
